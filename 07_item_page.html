@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items - CampusKart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="08_item_page.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CampusKart</div>
+        <ul class="nav-links">
+            <!-- <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Browse</a></li> -->
+            <li><a href="10_sellitempage.html" class="sell-item">+ Sell Item</a></li>
+        </ul>
+    </nav>
+
+    <section class="search-section">
+        <input type="text" id="search-input" placeholder="Search for books, kettles, tools...">
+    </section>
+
+    <div class="container">
+        <div id="product-grid" class="product-grid">
+            <p class="loading-text">Loading items...</p>
+        </div>
+    </div>
+
+    <script type="module" src="09_item_page.js"></script>
+</body>
+</html>

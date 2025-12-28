@@ -1,0 +1,25 @@
+/* --- style.css --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    min-height: 100vh;
+
+    
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-back-school-pattern_23-2149464866.jpg?w=1380&t=st=1708587000~exp=1708587600~hmac=4c31031351313321015051450111002220422010320212542001022101440125');
+
+   
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+   
+    background-attachment: fixed;
+
+    
+    background-color: rgba(127, 161, 249, 0.729);
+    background-blend-mode: overlay;
+}

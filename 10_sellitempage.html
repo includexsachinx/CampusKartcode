@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Item - CampusKart</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="11_sellitempage.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="auth-body">
+    <div class="auth-container">
+        <!-- <h2>List Your Item</h2> -->
+        <!-- <p>Post an ad for your classmates</p> -->
+
+        <form id="sell-form">
+            <div class="input-group">
+                <label>Item Name</label>
+                <input type="text" id="item-title" placeholder="e.g. Electric Kettle (1 Litre)" required>
+            </div>
+            <div class="input-group">
+                <label>Price (₹)</label>
+                <input type="number" id="item-price" placeholder="500" required>
+            </div>
+            <div class="input-group">
+                <label>Category</label>
+                <select id="item-category"
+                    style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+                    <option value="Books">Books/Notes</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Hostel">Hostel Needs</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>WhatsApp Number (for buyers to contact you)</label>
+                <input type="tel" id="item-phone" placeholder="9876543210" pattern="[0-9]{10}" required>
+                <p style="font-size: 0.8rem; color: #666;">Buyers will message you directly on this number.</p>
+            </div>
+            <div class="input-group">
+                <label>Upload Image</label>
+                <input type="file" id="item-image" accept="image/*" required>
+            </div>
+            <button type="submit" id="submit-btn" class="btn-full">Post Item</button>
+            <p class="switch-text"><a href="07_item_page.html">← Back to Browse</a></p>
+        </form>
+        
+    </div>
+
+    <script type="module" src="12_sellitem.js"></script>
+</body>
+
+</html>
