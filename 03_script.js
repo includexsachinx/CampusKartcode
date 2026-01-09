@@ -1,10 +1,8 @@
-// 1. Import the specific Google tools we need (Don't change these URLs)
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
-// 2. Your Firebase Configuration
-// Go to Firebase Console > Project Settings > General > Scroll down to "Your apps"
-// Copy the "firebaseConfig" object and replace the one below completely.
+
 const firebaseConfig = {
     apiKey: "AIzaSyD2VNeLPuJaxNtcjJL7uUoIXye7vXJ3Paw",
     authDomain: "campuskart2-7256b.firebaseapp.com",
@@ -56,4 +54,5 @@ onAuthStateChanged(auth, (user) => {
         // User is not logged in
         loginButton.innerText = "Login";
     }
+
 });
